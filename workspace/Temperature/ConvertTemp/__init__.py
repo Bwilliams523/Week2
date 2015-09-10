@@ -1,14 +1,11 @@
-start = 0
-end = 19
-increment = 1
-def main():   
-    
-    print('Converting Celsius to Fahrenheit')
-    print( 'between 0 and 19 degrees Celsius.')
-    
+def exceptioncontrol():
+    yoursmart=0
+    while(yoursmart==0):
+        try:
+            a=int(input("Tell Me Your Age As An Integer"))
+            print("You Were Born In The Year", 2015-a)
 
-    #convert celsius input to farenheit using loop
-    for Celsius in range (start, end, increment):
-        Farenheit = (9 / 5) * Celsius + 32
-        print(Celsius, '\t', format(Farenheit, '.1f'))
-main()
+    except:
+        print("You Did Not Enter An Integer")
+        
+exceptioncontrol()       
